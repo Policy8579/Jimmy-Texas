@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy Texas</title>
+    <meta name="description" content="Jimmy Texas - If it Flies, It Dies">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .header {
+            background: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Cabin', arial, sans-serif;
+            font-size: 44px;
+            font-weight: 700;
+            color: #1b1b1b;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 350px;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-width: 984px;
+            border-radius: 0;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            padding: 40px 0;
+            background: #fff;
+        }
+
+        .quote-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .quote-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 2/1;
+            object-fit: cover;
+            border-radius: 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        .quote-content {
+            text-align: center;
+        }
+
+        .quote-icon {
+            color: #c6c6c6;
+            font-size: 40px;
+            margin-bottom: 24px;
+        }
+
+        .quote-title {
+            font-family: 'Cabin', arial, sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #1b1b1b;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #c6c6c6;
+            display: inline-block;
+            width: 40px;
+        }
+
+        .quote-author {
+            color: #595959;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+
+        /* News Section */
+        .news-section {
+            padding: 40px 0;
+            background: #fff;
+        }
+
+        .news-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Lato', arial, sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+
+        .news-link {
+            display: block;
+            font-size: 25px;
+            font-family: 'Cabin', arial, sans-serif;
+            color: #333;
+            text-decoration: none;
+            text-align: center;
+            margin-bottom: 24px;
+            padding: 16px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .news-link:hover {
+            background-color: #f8f8f8;
+            color: #000;
+        }
+
+        /* Footer */
+        .footer {
+            background: #fff;
+            padding: 32px 0;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer p {
+            color: #595959;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .footer a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 32px;
+            }
+
+            .quote-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .quote-title {
+                font-size: 24px;
+            }
+
+            .news-link {
+                font-size: 20px;
+                padding: 12px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero {
+                min-height: 250px;
+            }
+
+            .news-link {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">Jimmy Texas</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <img src="hero-image.jpg" alt="Jimmy Texas Hero Image" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-grid">
+                <div>
+                    <img src="quote-image.jpg" alt="Jimmy Texas Quote Image" class="quote-image">
+                </div>
+                <div class="quote-content">
+                    <div class="quote-icon">"</div>
+                    <h1 class="quote-title">If it Flies, It Dies</h1>
+                    <p class="quote-author">Jimmy Texas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <span class="news-title">News Stories</span>
+            </div>
+            
+            <a href="https://nypost.com/2022/11/07/video-of-a-naked-hunter-with-dead-partridges-sparks-outrage/" class="news-link" target="_blank">
+                Bizarre video of a naked hunter with dead partridges sparks outrage
+            </a>
+            
+            <a href="https://www.kwtx.com/2022/11/16/two-bald-eagles-shot-dead-east-texas/?outputType=amp/" class="news-link" target="_blank">
+                Two bald eagles shot dead in East Texas
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Copyright © 2022 Jimmytexas - All Rights Reserved.</p>
+                <p>Powered by <a href="https://www.godaddy.com/" target="_blank">GoDaddy</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
